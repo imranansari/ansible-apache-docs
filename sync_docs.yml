@@ -1,0 +1,6 @@
+---
+- hosts: apache
+  sudo: yes
+  tasks:
+    - name: sync docs
+      synchronize: src=docs dest=/var/www/html
